@@ -1,0 +1,99 @@
+{
+  "header": {
+    "about-me": "About Me",
+    "projects": "Projects",
+    "contact": "Contact"
+  },
+  "hero": {
+    "title": "Leonardo Velasco",
+    "subtitle": "Data Analyst & Systems Engineer",
+    "description": "<span class='description--featured'>I transform data into strategic decisions</span> combining systems engineering precision with advanced statistical analysis.",
+    "myProjects": "My Projects",
+    "cvButton": "View CV"
+  },
+  "about": {
+    "title": "About Me",
+    "profile": {
+      "title": "Professional Profile",
+      "text1": "I am a Systems and Information Technology Engineering student with a minor in Data Analysis with computer tools. I specialize in designing systems that not only work, but also generate, organize and analyze data to support decision making.",
+      "text2": "My approach combines software engineering, statistical analysis and data visualization to solve real business problems through reliable information."
+    },
+    "skills": {
+      "title": "Skills",
+      "dataAnalysis": "Data & Analysis",
+      "tools": "Tools"
+    },
+    "education": {
+      "title": "Education",
+      "college": "Universidad Anáhuac México",
+      "degree": "Systems and Information Technology Engineering",
+      "minor": "Minor: Data analysis with computer tools",
+      "period": "2022 - present"
+    },
+    "contact": {
+      "header": "Have a project in mind?",
+      "button": "Contact Me"
+    }
+  },
+  "projects": {
+    "title": "Featured Projects",
+    "items": [
+      {
+        "title": "Interactive Sales Dashboard",
+        "description": "Tableau dashboard with trend analysis, customer segmentation and future sales prediction. SQL Server integration for real-time updates.",
+        "technologies": ["Tableau", "SQL Server", "Python"],
+        "github": "https://github.com/leonardovelasco/sales-dashboard",
+        "demo": "https://public.tableau.com/app/profile/leonardovelasco"
+      },
+      {
+        "title": "Customer Churn Prediction",
+        "description": "Machine Learning model to predict customer churn with 87% accuracy. Includes exploratory analysis, data cleaning and interactive visualizations.",
+        "technologies": ["Python", "Scikit-learn", "Pandas", "Seaborn"],
+        "github": "https://github.com/leonardovelasco/churn-prediction",
+        "demo": null
+      },
+      {
+        "title": "ETL Pipeline with AWS",
+        "description": "Automated pipeline for data extraction, transformation and loading from multiple sources. Implemented with AWS Lambda, S3 and Redshift.",
+        "technologies": ["AWS", "Python", "SQL", "Docker"],
+        "github": "https://github.com/leonardovelasco/etl-pipeline",
+        "demo": null
+      },
+      {
+        "title": "Social Media Sentiment Analysis",
+        "description": "NLP-based sentiment analysis system to classify customer opinions in real-time. Monitoring dashboard with key metrics.",
+        "technologies": ["Python", "NLTK", "MongoDB", "Flask"],
+        "github": "https://github.com/leonardovelasco/sentiment-analysis",
+        "demo": "https://sentiment-demo.herokuapp.com"
+      },
+      {
+        "title": "Recommendation System",
+        "description": "Collaborative filtering algorithm for product recommendation. Matrix factorization implementation and evaluation with RMSE and MAE metrics.",
+        "technologies": ["Python", "NumPy", "Surprise", "FastAPI"],
+        "github": "https://github.com/leonardovelasco/recommendation-system",
+        "demo": null
+      },
+      {
+        "title": "COVID-19 Data Visualization",
+        "description": "Interactive web application with heat maps, time series and comparative analysis between countries. Automatic data updates.",
+        "technologies": ["R", "Shiny", "ggplot2", "Plotly"],
+        "github": "https://github.com/leonardovelasco/covid-visualization",
+        "demo": "https://leonardovelasco.shinyapps.io/covid19"
+      }
+    ],
+    "viewProject": "View Project",
+    "liveDemo": "Live Demo",
+    "technologies": "Technologies"
+  },
+  "footer": {
+    "description": "Data Analyst & Systems Engineer specialized in turning complex data into actionable insights.",
+    "quickLinks": "Quick Links",
+    "about": "About Me",
+    "projects": "Projects",
+    "contact": "Contact",
+    "social": "Social Media",
+    "copyright": "© 2026 Leonardo Velasco. All rights reserved.",
+    "madeWith": "Made with",
+    "and": "and"
+  }
+}

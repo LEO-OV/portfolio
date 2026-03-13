@@ -1,0 +1,99 @@
+{
+  "header": {
+    "about-me": "Sobre mí",
+    "projects": "Proyectos",
+    "contact": "Contacto"
+  },
+  "hero": {
+    "title": "Leonardo Velasco",
+    "subtitle": "Data Analyst & Systems Engineer",
+    "description": "<span class='description--featured'>Transformo datos en decisiones estratégicas</span> combinando la precisión de la ingeniería de sistemas con el análisis estadístico avanzado.",
+    "myProjects": "Mis proyectos",
+    "cvButton": "Ver CV"
+  },
+  "about": {
+    "title": "Sobre mí",
+    "profile": {
+      "title": "Perfil Profesional",
+      "text1": "Soy estudiante de Ingeniería en Sistemas y Tecnologías de la Información con un minor en Análisis de Datos con herramientas informáticas. Me especializo en diseñar sistemas que no solo funcionan, sino que generan, organizan y analizan datos para apoyar la toma de decisiones.",
+      "text2": "Mi enfoque combina ingeniería de software, análisis estadístico y visualización de datos para resolver problemas reales de negocio mediante información confiable."
+    },
+    "skills": {
+      "title": "Habilidades",
+      "dataAnalysis": "Datos y Análisis",
+      "tools": "Herramientas"
+    },
+    "education": {
+      "title": "Educación",
+      "college": "Universidad Anáhuac México",
+      "degree": "Ingeniería en Sistemas y Tecnologías de la Información",
+      "minor": "Minor: Análisis de datos con herramientas informáticas",
+      "period": "2022 - presente"
+    },
+    "contact": {
+      "header": "¿Tienes algún proyecto en mente?",
+      "button": "Contáctame"
+    }
+  },
+  "projects": {
+    "title": "Proyectos Destacados",
+    "items": [
+      {
+        "title": "Dashboard de Ventas Interactivo",
+        "description": "Dashboard en Tableau con análisis de tendencias, segmentación de clientes y predicción de ventas futuras. Integración con SQL Server para actualización en tiempo real.",
+        "technologies": ["Tableau", "SQL Server", "Python"],
+        "github": "https://github.com/leonardovelasco/sales-dashboard",
+        "demo": "https://public.tableau.com/app/profile/leonardovelasco"
+      },
+      {
+        "title": "Análisis Predictivo de Churn",
+        "description": "Modelo de Machine Learning para predecir deserción de clientes con 87% de precisión. Incluye análisis exploratorio, limpieza de datos y visualizaciones interactivas.",
+        "technologies": ["Python", "Scikit-learn", "Pandas", "Seaborn"],
+        "github": "https://github.com/leonardovelasco/churn-prediction",
+        "demo": null
+      },
+      {
+        "title": "ETL Pipeline con AWS",
+        "description": "Pipeline automatizado para extracción, transformación y carga de datos desde múltiples fuentes. Implementado con AWS Lambda, S3 y Redshift.",
+        "technologies": ["AWS", "Python", "SQL", "Docker"],
+        "github": "https://github.com/leonardovelasco/etl-pipeline",
+        "demo": null
+      },
+      {
+        "title": "Análisis de Sentimientos en Redes Sociales",
+        "description": "Sistema de análisis de sentimientos usando NLP para clasificar opiniones de clientes en tiempo real. Dashboard de monitoreo con métricas clave.",
+        "technologies": ["Python", "NLTK", "MongoDB", "Flask"],
+        "github": "https://github.com/leonardovelasco/sentiment-analysis",
+        "demo": "https://sentiment-demo.herokuapp.com"
+      },
+      {
+        "title": "Sistema de Recomendación",
+        "description": "Algoritmo de filtrado colaborativo para recomendación de productos. Implementación de matriz de factorización y evaluación con métricas RMSE y MAE.",
+        "technologies": ["Python", "NumPy", "Surprise", "FastAPI"],
+        "github": "https://github.com/leonardovelasco/recommendation-system",
+        "demo": null
+      },
+      {
+        "title": "Visualización de Datos COVID-19",
+        "description": "Aplicación web interactiva con mapas de calor, series temporales y análisis comparativo entre países. Actualización automática de datos.",
+        "technologies": ["R", "Shiny", "ggplot2", "Plotly"],
+        "github": "https://github.com/leonardovelasco/covid-visualization",
+        "demo": "https://leonardovelasco.shinyapps.io/covid19"
+      }
+    ],
+    "viewProject": "Ver proyecto",
+    "liveDemo": "Demo en vivo",
+    "technologies": "Tecnologías"
+  },
+  "footer": {
+    "description": "Data Analyst & Systems Engineer especializado en convertir datos complejos en insights accionables.",
+    "quickLinks": "Enlaces Rápidos",
+    "about": "Sobre mí",
+    "projects": "Proyectos",
+    "contact": "Contacto",
+    "social": "Redes Sociales",
+    "copyright": "© 2026 Leonardo Velasco. Todos los derechos reservados.",
+    "madeWith": "Hecho con",
+    "and": "y"
+  }
+}
