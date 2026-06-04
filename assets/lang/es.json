@@ -23,7 +23,8 @@
       "title": "Habilidades",
       "dataAnalysis": "Datos y Análisis",
       "development": "Desarrollo",
-      "tools": "Infraestructura y Herramientas"
+      "tools": "Infraestructura y Herramientas",
+      "aiAlt": "Inteligencia Artificial"
     },
     "education": {
       "title": "Educación",
@@ -50,12 +51,12 @@
         },
         {
           "name": "Cisco Network Security",
-          "meta": "Cisco",
-          "chip": "2026"
+          "meta": "Cisco Networking Academy",
+          "chip": "Por concluir"
         },
         {
           "name": "Artificial Intelligence with Machine Learning in Java",
-          "meta": "Oracle",
+          "meta": "English",
           "chip": "2025"
         },
         {
@@ -84,16 +85,16 @@
     "title": "Proyectos",
     "items": [
       {
-        "title": "Sitio Web Dinámico para Casa Pestalozzi",
-        "category": "Freelance / Web Development",
-        "description": "Desarrollo de un sitio web dinámico para Casa Pestalozzi, orientado a comunicar la propuesta gastronómica del restaurante, organizar su contenido comercial y mejorar la experiencia de navegación del usuario. El proyecto integra secciones clave como restaurante, panadería, eventos, menú visual, contacto y reserva directa.",
-        "technologies": ["HTML", "CSS", "JavaScript", "PHP"],
-        "image": "assets/images/projects/casa-pestalozzi.webp",
-        "imageAlt": "Captura del sitio web comercial para restaurante",
-        "type": "Freelance",
-        "role": "Diseño, maquetación e implementación web",
-        "projectUrl": "https://casapestalozzi.com/",
-        "repository": "https://github.com/LEO-OV/casa-pestalozzi"
+        "title": "Sistema Web de Gestión y Reportes de Calidad",
+        "category": "Full-stack / Bases de datos / Reportes",
+        "description": "Sistema académico desarrollado en equipo para gestionar procesos de certificación de calidad en una fábrica de harinas. La aplicación permite administrar usuarios, clientes, equipos de laboratorio y parámetros técnicos, además de registrar análisis de calidad, generar certificados PDF y visualizar reportes estadísticos con gráficas y tablas resumen.",
+        "technologies": ["HTML", "CSS", "JavaScript", "PHP", "MySQL"],
+        "image": "assets/images/projects/certificados-calidad.webp",
+        "imageAlt": "Interfaz de sistema web para gestión de certificaciones, análisis de calidad y reportes estadísticos",
+        "type": "Proyecto académico / equipo",
+        "role": "Líder de backend y bases de datos",
+        "repository": "https://github.com/AlexCayd/fabrica-harinas",
+        "projectUrl": null
       },
       {
         "title": "Análisis Predictivo de Egresos Hospitalarios",
@@ -108,18 +109,17 @@
         "status": "Documentado en reporte académico"
       },
       {
-        "title": "Sistema Web de Gestión y Reportes de Calidad",
-        "category": "Full-stack / Bases de datos / Reportes",
-        "description": "Sistema académico desarrollado en equipo para gestionar procesos de certificación de calidad en una fábrica de harinas. La aplicación permite administrar usuarios, clientes, equipos de laboratorio y parámetros técnicos, además de registrar análisis de calidad, generar certificados PDF y visualizar reportes estadísticos con gráficas y tablas resumen.",
-        "technologies": ["HTML", "CSS", "JavaScript", "PHP", "MySQL"],
-        "image": "assets/images/projects/certificados-calidad.webp",
-        "imageAlt": "Interfaz de sistema web para gestión de certificaciones, análisis de calidad y reportes estadísticos",
-        "type": "Proyecto académico / equipo",
-        "role": "Líder de backend y bases de datos",
-        "repository": "https://github.com/AlexCayd/fabrica-harinas",
-        "projectUrl": null
+        "title": "Sitio Web Dinámico para Casa Pestalozzi",
+        "category": "Freelance / Web Development",
+        "description": "Desarrollo de un sitio web dinámico para Casa Pestalozzi, orientado a comunicar la propuesta gastronómica del restaurante, organizar su contenido comercial y mejorar la experiencia de navegación del usuario. El proyecto integra secciones clave como restaurante, panadería, eventos, menú visual, contacto y reserva directa.",
+        "technologies": ["HTML", "CSS", "JavaScript", "PHP"],
+        "image": "assets/images/projects/casa-pestalozzi.webp",
+        "imageAlt": "Captura del sitio web comercial para restaurante",
+        "type": "Freelance",
+        "role": "Diseño, maquetación e implementación web",
+        "projectUrl": "https://casapestalozzi.com/",
+        "repository": "https://github.com/LEO-OV/casa-pestalozzi"
       },
-
       {
         "title": "Landing page para empresa de tecnología",
         "category": "Landing page / Maqueta",

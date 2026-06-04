@@ -1,13 +1,13 @@
 @font-face {
   font-family: "Montserrat";
-  src: url("/assets/fonts/Montserrat.woff2") format("woff2");
+  src: url("../fonts/Montserrat.woff2") format("woff2");
   font-display: swap;
   font-weight: 100 900;
 }
 
 @font-face {
   font-family: "OpenSans";
-  src: url("/assets/fonts/OpenSans.woff2") format("woff2");
+  src: url("../fonts/OpenSans.woff2") format("woff2");
   font-display: swap;
   font-weight: 100 900;
 }
@@ -624,6 +624,19 @@ html[data-theme="dark"] .controls__icon--moon,
   padding-top: clamp(5rem, 8vw, 8rem);
   display: flex;
   flex-direction: column;
+}
+
+.btn:disabled,
+.btn[aria-disabled="true"] {
+  cursor: not-allowed;
+  opacity: 0.65;
+}
+
+.btn:disabled:hover,
+.btn[aria-disabled="true"]:hover {
+  transform: none;
+  background: var(--glass);
+  box-shadow: none;
 }
 
 .about__title {

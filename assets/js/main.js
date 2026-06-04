@@ -8,7 +8,7 @@ let translations = {};
 // Cargar traducciones
 async function loadTranslations(lang) {
   try {
-    const response = await fetch(`/assets/lang/${lang}.json`);
+    const response = await fetch(`assets/lang/${lang}.json`);
     if (!response.ok) throw new Error("Translation file not found");
     translations = await response.json();
     currentLanguage = lang;
@@ -38,6 +38,9 @@ function getNestedTranslation(section, value) {
 // Aplicar traducciones a todos los elementos
 function applyTranslations() {
   const elements = document.querySelectorAll("[data-section][data-value]");
+  const translatedAltElements = document.querySelectorAll(
+    "[data-alt-section][data-alt-value]",
+  );
 
   elements.forEach((element) => {
     const section = element.getAttribute("data-section");
@@ -50,6 +53,16 @@ function applyTranslations() {
       } else {
         element.innerHTML = translation;
       }
+    }
+  });
+
+  translatedAltElements.forEach((element) => {
+    const section = element.getAttribute("data-alt-section");
+    const value = element.getAttribute("data-alt-value");
+    const translation = getNestedTranslation(section, value);
+
+    if (translation) {
+      element.setAttribute("alt", translation);
     }
   });
 
@@ -205,6 +218,7 @@ function renderProjects() {
       { once: true }
     );
   });
+
 }
 
 // ============================================

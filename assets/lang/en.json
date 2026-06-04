@@ -23,7 +23,8 @@
       "title": "Skills",
       "dataAnalysis": "Data & Analysis",
       "development": "Development",
-      "tools": "Infrastructure & Tools"
+      "tools": "Infrastructure & Tools",
+      "aiAlt": "Artificial Intelligence"
     },
     "education": {
       "title": "Education",
@@ -50,12 +51,12 @@
         },
         {
           "name": "Cisco Network Security",
-          "meta": "Cisco",
-          "chip": "2026"
+          "meta": "Cisco Networking Academy",
+          "chip": "To complete"
         },
         {
           "name": "Artificial Intelligence with Machine Learning in Java",
-          "meta": "Oracle",
+          "meta": "English",
           "chip": "2025"
         },
         {
@@ -84,16 +85,16 @@
     "title": "Projects",
     "items": [
       {
-        "title": "Dynamic Website for Casa Pestalozzi",
-        "category": "Freelance / Web Development",
-        "description": "Development of a dynamic website for Casa Pestalozzi, focused on communicating the restaurant’s gastronomic concept, organizing its commercial content, and improving the user browsing experience. The project includes key sections such as restaurant, bakery, events, visual menu, contact, and direct reservations.",
-        "technologies": ["HTML", "CSS", "JavaScript", "PHP"],
-        "image": "assets/images/projects/casa-pestalozzi.webp",
-        "imageAlt": "Screenshot of a commercial restaurant website",
-        "type": "Freelance",
-        "role": "Web design, layout, and implementation",
-        "projectUrl": "https://casapestalozzi.com/",
-        "repository": "https://github.com/LEO-OV/casa-pestalozzi"
+        "title": "Quality Management and Reporting Web System",
+        "category": "Full-stack / Databases / Reporting",
+        "description": "Academic team project developed to manage quality certification processes in a flour manufacturing company. The application allows users to manage accounts, clients, laboratory equipment, and technical parameters, as well as record quality analyses, generate PDF certificates, and visualize statistical reports with charts and summary tables.",
+        "technologies": ["HTML", "CSS", "JavaScript", "PHP", "MySQL"],
+        "image": "assets/images/projects/certificados-calidad.webp",
+        "imageAlt": "Web system interface for certification management, quality analysis, and statistical reporting",
+        "type": "Academic Team Project",
+        "role": "Backend and Database Lead",
+        "repository": "https://github.com/AlexCayd/fabrica-harinas",
+        "projectUrl": null
       },
       {
         "title": "Predictive Analysis of Hospital Discharges",
@@ -108,18 +109,17 @@
         "status": "Documented in an academic report"
       },
       {
-        "title": "Quality Management and Reporting Web System",
-        "category": "Full-stack / Databases / Reporting",
-        "description": "Academic team project developed to manage quality certification processes in a flour manufacturing company. The application allows users to manage accounts, clients, laboratory equipment, and technical parameters, as well as record quality analyses, generate PDF certificates, and visualize statistical reports with charts and summary tables.",
-        "technologies": ["HTML", "CSS", "JavaScript", "PHP", "MySQL"],
-        "image": "assets/images/projects/certificados-calidad.webp",
-        "imageAlt": "Web system interface for certification management, quality analysis, and statistical reporting",
-        "type": "Academic Team Project",
-        "role": "Backend and Database Lead",
-        "repository": "https://github.com/AlexCayd/fabrica-harinas",
-        "projectUrl": null
+        "title": "Dynamic Website for Casa Pestalozzi",
+        "category": "Freelance / Web Development",
+        "description": "Development of a dynamic website for Casa Pestalozzi, focused on communicating the restaurant’s gastronomic concept, organizing its commercial content, and improving the user browsing experience. The project includes key sections such as restaurant, bakery, events, visual menu, contact, and direct reservations.",
+        "technologies": ["HTML", "CSS", "JavaScript", "PHP"],
+        "image": "assets/images/projects/casa-pestalozzi.webp",
+        "imageAlt": "Screenshot of a commercial restaurant website",
+        "type": "Freelance",
+        "role": "Web design, layout, and implementation",
+        "projectUrl": "https://casapestalozzi.com/",
+        "repository": "https://github.com/LEO-OV/casa-pestalozzi"
       },
-
       {
         "title": "Technology Company Landing Page",
         "category": "Landing page / Mockup",

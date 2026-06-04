@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Leonardo Velasco">
+  <rect width="64" height="64" rx="14" fill="#0F1020"/>
+  <path fill="none" stroke="#FF3F60" stroke-linecap="round" stroke-linejoin="round" stroke-width="6" d="M23 18 9 32l14 14"/>
+  <path fill="none" stroke="#6067D3" stroke-linecap="round" stroke-linejoin="round" stroke-width="6" d="m41 18 14 14-14 14"/>
+  <path fill="none" stroke="#FFFFFF" stroke-linecap="round" stroke-width="5" d="m36 14-8 36"/>
+</svg>
