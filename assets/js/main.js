@@ -4,6 +4,10 @@
 
 let currentLanguage = "es";
 let translations = {};
+const cvLinks = {
+  es: "assets/docs/CV_Leonardo_Velasco.pdf",
+  en: "assets/docs/CV_Leonardo_Velasco_eng.pdf",
+};
 
 // Cargar traducciones
 async function loadTranslations(lang) {
@@ -71,6 +75,15 @@ function applyTranslations() {
     renderProjects();
   }
 
+  updateCvLink(currentLanguage);
+}
+
+// Actualizar enlace del CV segun el idioma activo
+function updateCvLink(lang) {
+  const cvLink = document.getElementById("cvLink");
+  if (!cvLink) return;
+
+  cvLink.href = cvLinks[lang] || cvLinks.es;
 }
 
 // Cambiar idioma
