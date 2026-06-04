@@ -58,10 +58,6 @@ function applyTranslations() {
     renderProjects();
   }
 
-  // Actualizar certificaciones
-  if (translations.certifications && translations.certifications.items) {
-    renderCertifications();
-  }
 }
 
 // Cambiar idioma
@@ -96,57 +92,119 @@ function renderProjects() {
   if (!projectsGrid || !translations.projects) return;
 
   const projects = translations.projects.items;
-  const viewProjectText = translations.projects.viewProject || "View Project";
-  const liveDemoText = translations.projects.liveDemo || "Live Demo";
+  const repositoryText = translations.projects.repositoryLabel || "View Repository";
+  const projectLinkText = translations.projects.projectLinkLabel || "View Project";
   const technologiesText = translations.projects.technologies || "Technologies";
+  const typeLabel = translations.projects.typeLabel || "Type";
+  const roleLabel = translations.projects.roleLabel || "Role";
+  const statusLabel = translations.projects.statusLabel || "Status";
+  const imagePendingText = translations.projects.imagePending || "Image pending";
 
   projectsGrid.innerHTML = projects
-    .map(
-      (project) => `
+    .map((project) => {
+      const meta = [
+        project.type
+          ? `<p class="project-card__meta-item"><span>${typeLabel}:</span> ${project.type}</p>`
+          : "",
+        project.role
+          ? `<p class="project-card__meta-item"><span>${roleLabel}:</span> ${project.role}</p>`
+          : "",
+      ].join("");
+
+      const repositoryUrl = project.repository || project.github;
+      const projectUrl = project.projectUrl || project.demo;
+      const projectStatus = project.status;
+      const links = [
+        repositoryUrl
+          ? `
+          <a href="${repositoryUrl}" target="_blank" rel="noopener noreferrer" class="project-link project-link--repository btn btn-secondary" aria-label="${repositoryText}: ${project.title}">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" />
+            </svg>
+            ${repositoryText}
+          </a>
+        `
+          : "",
+        projectUrl
+          ? `
+          <a href="${projectUrl}" target="_blank" rel="noopener noreferrer" class="btn btn-primary project-link project-link--project" aria-label="${projectLinkText}: ${project.title}">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <path d="M14 3h7v7"/>
+              <path d="M10 14 21 3"/>
+              <path d="M21 14v5a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5"/>
+            </svg>
+            ${projectLinkText}
+          </a>
+        `
+          : "",
+      ].join("");
+
+      const projectImage = project.image
+        ? `
+        <img
+          class="project-card__image"
+          src="${project.image}"
+          alt="${project.imageAlt || project.title}"
+          loading="lazy"
+          decoding="async"
+        >
+      `
+        : `<span class="project-card__media-placeholder">${imagePendingText}</span>`;
+
+      return `
     <article class="project-card">
       <div class="project-card__header">
+        ${
+          project.category
+            ? `<p class="project-card__category">${project.category}</p>`
+            : ""
+        }
         <h3 class="project-card__title">${project.title}</h3>
         <p class="project-card__description">${project.description}</p>
       </div>
-      
+
+      <div class="project-card__media">
+        ${projectImage}
+      </div>
+
+      ${meta ? `<div class="project-card__meta">${meta}</div>` : ""}
+
       <div class="project-card__tech">
         <span class="project-card__tech-label">${technologiesText}:</span>
         ${project.technologies
           .map((tech) => `<span class="tech-tag">${tech}</span>`)
           .join("")}
       </div>
-      
-      <div class="project-card__links">
-        ${
-          project.github
-            ? `
-          <a href="${project.github}" target="_blank" rel="noopener noreferrer" class="project-link">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" />
-            </svg>
-            ${viewProjectText}
-          </a>
+
+      ${
+        projectStatus
+          ? `
+          <div class="project-card__status">
+            <span class="project-card__status-label">${statusLabel}</span>
+            <p class="project-card__status-text">${projectStatus}</p>
+          </div>
         `
-            : ""
-        }
-        ${
-          project.demo
-            ? `
-          <a href="${project.demo}" target="_blank" rel="noopener noreferrer" class="project-link project-link--demo">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/>
-              <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/>
-            </svg>
-            ${liveDemoText}
-          </a>
-        `
-            : ""
-        }
-      </div>
+          : ""
+      }
+
+      ${links ? `<div class="project-card__links">${links}</div>` : ""}
     </article>
-  `,
-    )
+  `;
+    })
     .join("");
+
+  projectsGrid.querySelectorAll(".project-card__image").forEach((image) => {
+    image.addEventListener(
+      "error",
+      () => {
+        const fallback = document.createElement("span");
+        fallback.className = "project-card__media-placeholder";
+        fallback.textContent = imagePendingText;
+        image.replaceWith(fallback);
+      },
+      { once: true }
+    );
+  });
 }
 
 // ============================================

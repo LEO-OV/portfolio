@@ -5,9 +5,10 @@
     "contact": "Contact"
   },
   "hero": {
-    "title": "Leonardo Velasco",
-    "subtitle": "Data Analyst & Systems Engineer",
-    "description": "<span class='description--featured'>I transform data into strategic decisions</span> combining systems engineering precision with advanced statistical analysis.",
+    "titleName": "Leonardo",
+    "titleLastName": "Velasco",
+    "subtitle": "Systems, Data & Web Development",
+    "description": "I develop web solutions and data-driven projects, integrating programming, databases, and data analysis to create functional, problem-solving tools.",
     "myProjects": "My Projects",
     "cvButton": "View CV"
   },
@@ -15,20 +16,64 @@
     "title": "About Me",
     "profile": {
       "title": "Professional Profile",
-      "text1": "I am a Systems and Information Technology Engineering student with a minor in Data Analysis with computer tools. I specialize in designing systems that not only work, but also generate, organize and analyze data to support decision making.",
-      "text2": "My approach combines software engineering, statistical analysis and data visualization to solve real business problems through reliable information."
+      "text1": "I am a Systems and Information Technology Engineering student with a minor in Data Analysis with Computer Tools. My profile combines software development, databases, data analysis, information security and technology infrastructure.",
+      "text2": "My goal is to contribute to projects where technology improves processes, organizes information, and creates useful, measurable solutions aligned with business objectives."
     },
     "skills": {
       "title": "Skills",
       "dataAnalysis": "Data & Analysis",
-      "tools": "Tools"
+      "development": "Development",
+      "tools": "Infrastructure & Tools"
     },
     "education": {
       "title": "Education",
       "college": "Universidad Anáhuac México",
       "degree": "Systems and Information Technology Engineering",
-      "minor": "Minor: Data analysis with computer tools",
+      "labels": {
+        "minor": "Minor",
+        "average": "Average",
+        "languages": "Languages",
+        "period": "Period"
+      },
+      "minor": "Data Analysis with Computer Tools",
+      "average": "9.3",
+      "languages": ["Native Spanish  |  B2 English"],
       "period": "2022 - present"
+    },
+    "certifications": {
+      "title": "Certifications",
+      "items": [
+        {
+          "name": "Google Data Analytics",
+          "meta": "Google",
+          "chip": "In progress"
+        },
+        {
+          "name": "Cisco Network Security",
+          "meta": "Cisco",
+          "chip": "2026"
+        },
+        {
+          "name": "Artificial Intelligence with Machine Learning in Java",
+          "meta": "Oracle",
+          "chip": "2025"
+        },
+        {
+          "name": "CCNAv7: Switching, Routing, and Wireless Essentials",
+          "meta": "Cisco",
+          "chip": "2023"
+        },
+        {
+          "name": "CCNAv7: Introduction to Networks",
+          "meta": "Cisco",
+          "chip": "2023"
+        },
+        {
+          "name": "Partner: NDG Linux Unhatched",
+          "meta": "Linux Professional Institute",
+          "chip": "2022"
+        }
+      ]
     },
     "contact": {
       "header": "Have a project in mind?",
@@ -36,64 +81,94 @@
     }
   },
   "projects": {
-    "title": "Featured Projects",
+    "title": "Projects",
     "items": [
       {
-        "title": "Interactive Sales Dashboard",
-        "description": "Tableau dashboard with trend analysis, customer segmentation and future sales prediction. SQL Server integration for real-time updates.",
-        "technologies": ["Tableau", "SQL Server", "Python"],
-        "github": "https://github.com/leonardovelasco/sales-dashboard",
-        "demo": "https://public.tableau.com/app/profile/leonardovelasco"
+        "title": "Dynamic Website for Casa Pestalozzi",
+        "category": "Freelance / Web Development",
+        "description": "Development of a dynamic website for Casa Pestalozzi, focused on communicating the restaurant’s gastronomic concept, organizing its commercial content, and improving the user browsing experience. The project includes key sections such as restaurant, bakery, events, visual menu, contact, and direct reservations.",
+        "technologies": ["HTML", "CSS", "JavaScript", "PHP"],
+        "image": "assets/images/projects/casa-pestalozzi.webp",
+        "imageAlt": "Screenshot of a commercial restaurant website",
+        "type": "Freelance",
+        "role": "Web design, layout, and implementation",
+        "projectUrl": "https://casapestalozzi.com/",
+        "repository": "https://github.com/LEO-OV/casa-pestalozzi"
       },
       {
-        "title": "Customer Churn Prediction",
-        "description": "Machine Learning model to predict customer churn with 87% accuracy. Includes exploratory analysis, data cleaning and interactive visualizations.",
-        "technologies": ["Python", "Scikit-learn", "Pandas", "Seaborn"],
-        "github": "https://github.com/leonardovelasco/churn-prediction",
-        "demo": null
+        "title": "Predictive Analysis of Hospital Discharges",
+        "category": "Data Analysis / Machine Learning",
+        "description": "Academic project focused on exploratory analysis, data cleaning, and modeling of hospital discharge data to evaluate patterns associated with patient outcomes. The project included variable transformation, data visualization, training and testing set partitioning, classification model training, and performance metric interpretation.",
+        "technologies": ["R", "SQL", "Machine Learning"],
+        "image": "assets/images/projects/hospital-ml-analysis.svg",
+        "imageAlt": "Conceptual visualization of predictive analysis applied to hospital data",
+        "type": "Academic Project",
+        "repository": null,
+        "projectUrl": null,
+        "status": "Documented in an academic report"
       },
       {
-        "title": "ETL Pipeline with AWS",
-        "description": "Automated pipeline for data extraction, transformation and loading from multiple sources. Implemented with AWS Lambda, S3 and Redshift.",
-        "technologies": ["AWS", "Python", "SQL", "Docker"],
-        "github": "https://github.com/leonardovelasco/etl-pipeline",
-        "demo": null
+        "title": "Quality Management and Reporting Web System",
+        "category": "Full-stack / Databases / Reporting",
+        "description": "Academic team project developed to manage quality certification processes in a flour manufacturing company. The application allows users to manage accounts, clients, laboratory equipment, and technical parameters, as well as record quality analyses, generate PDF certificates, and visualize statistical reports with charts and summary tables.",
+        "technologies": ["HTML", "CSS", "JavaScript", "PHP", "MySQL"],
+        "image": "assets/images/projects/certificados-calidad.webp",
+        "imageAlt": "Web system interface for certification management, quality analysis, and statistical reporting",
+        "type": "Academic Team Project",
+        "role": "Backend and Database Lead",
+        "repository": "https://github.com/AlexCayd/fabrica-harinas",
+        "projectUrl": null
+      },
+
+      {
+        "title": "Technology Company Landing Page",
+        "category": "Landing page / Mockup",
+        "description": "Landing page mockup for a technology company, focused on visual structure, service presentation and responsive design.",
+        "technologies": ["HTML", "CSS", "JavaScript"],
+        "image": "assets/images/projects/cloudcode-oscuro.webp",
+        "imageAlt": "Image for technology company landing page",
+        "type": "Mockup",
+        "repository": "https://github.com/LEO-OV/cloud-code",
+        "projectUrl": "https://cloudcode.leoov.dev/"
       },
       {
-        "title": "Social Media Sentiment Analysis",
-        "description": "NLP-based sentiment analysis system to classify customer opinions in real-time. Monitoring dashboard with key metrics.",
-        "technologies": ["Python", "NLTK", "MongoDB", "Flask"],
-        "github": "https://github.com/leonardovelasco/sentiment-analysis",
-        "demo": "https://sentiment-demo.herokuapp.com"
+        "title": "Cafe Landing Page",
+        "category": "Landing page / Mockup",
+        "description": "Web mockup for a cafe, oriented toward product presentation, visual identity and simple navigation.",
+        "technologies": ["HTML", "CSS", "JavaScript"],
+        "image": "assets/images/projects/vanilla.webp",
+        "imageAlt": "Image for cafe landing page",
+        "type": "Mockup",
+        "repository": "https://github.com/LEO-OV/cafateria-vanilla",
+        "projectUrl": "https://cafeteria-vanilla.leoov.dev"
       },
       {
-        "title": "Recommendation System",
-        "description": "Collaborative filtering algorithm for product recommendation. Matrix factorization implementation and evaluation with RMSE and MAE metrics.",
-        "technologies": ["Python", "NumPy", "Surprise", "FastAPI"],
-        "github": "https://github.com/leonardovelasco/recommendation-system",
-        "demo": null
-      },
-      {
-        "title": "COVID-19 Data Visualization",
-        "description": "Interactive web application with heat maps, time series and comparative analysis between countries. Automatic data updates.",
-        "technologies": ["R", "Shiny", "ggplot2", "Plotly"],
-        "github": "https://github.com/leonardovelasco/covid-visualization",
-        "demo": "https://leonardovelasco.shinyapps.io/covid19"
+        "title": "Cardiology Landing Page",
+        "category": "Landing page / Mockup",
+        "description": "Landing page mockup for cardiology services, focused on clear communication, informational structure and a professional visual design.",
+        "technologies": ["HTML", "CSS", "JavaScript"],
+        "image": "assets/images/projects/cardiologia.webp",
+        "imageAlt": " Image for cardiology landing page",
+        "type": "Mockup",
+        "repository": "https://github.com/LEO-OV/cardiologia",
+        "projectUrl": "https://cardiologia.leoov.dev"
       }
     ],
-    "viewProject": "View Project",
-    "liveDemo": "Live Demo",
-    "technologies": "Technologies"
+    "repositoryLabel": "Repository",
+    "projectLinkLabel": "View Project",
+    "technologies": "Technologies",
+    "typeLabel": "Type",
+    "roleLabel": "Role",
+    "pendingLabel": "To complete",
+    "imagePending": "Image pending"
   },
   "footer": {
-    "description": "Data Analyst & Systems Engineer specialized in turning complex data into actionable insights.",
+    "description": "Portfolio of projects in systems engineering, data analysis, web development and technology solutions.",
     "quickLinks": "Quick Links",
     "about": "About Me",
     "projects": "Projects",
     "contact": "Contact",
     "social": "Social Media",
-    "copyright": "© 2026 Leonardo Velasco. All rights reserved.",
-    "madeWith": "Made with",
-    "and": "and"
+    "copyright": "© 2026 Leonardo Velasco. All rights reserved."
   }
 }
